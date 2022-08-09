@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/watches/watch-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="watch-container">
+  <div class="watch-details">
+    <h1>Watch: {{watch.brand}} {{ watch.name }}</h1>
+    <h2>Reference: {{ watch.reference }}</h2>
+    <h2>Content Delivery: {{ watch.delivery }}</h2>
+    <h2>Year: {{ watch.year }}</h2>
+    <div class='watch-actions'>
+      <a href="{% url 'watches_update' watch.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'watches_delete' watch.id %}" class="btn danger">Delete</a>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

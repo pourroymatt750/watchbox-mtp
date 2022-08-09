@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}"/>
+{% endblock %}
+
+{% block content %}
+<section class='page-header'>
+  <h1>About the Watchbox</h1>
+  <h2>Welcome! Watchbox is an app that allows you to keep records of the details of your watches.</h2>
+  <h2>While some people may not need an entire app to manage this, it can be extremely helpful for somebody who owns large amounts of watches such as a watch dealer.</h2>
+  <h2> Watchbox helps keep detailed records of all your inventory. This will allow you to focus on what you do best, which is buying and selling the right watches at the right price, while leaving all the detail keeping up to Watchbox</h2>
+</section>
+
+<section class="logo-container">
+  <div class="watch-container">
+    <img src="{% static 'images/watchbox-1.jpeg' %}">
+  </div>
+</section>
+
+{% endblock %} 
