@@ -1,3 +1,6 @@
+import environ
+env = environ.Env()
+environ.Env.read_env()
 from pathlib import Path
 import os
 
@@ -9,10 +12,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG') == 'True' 
+
+DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = []
 
@@ -39,7 +44,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'watchbox.urls'
+ROOT_URLCONF = 'watchbox-mtp.urls'
 
 TEMPLATES = [
     {
@@ -57,7 +62,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'watchbox.wsgi.application'
+WSGI_APPLICATION = 'watchbox-mtp.wsgi.application'
 
 
 # Database
@@ -121,3 +126,11 @@ LOGOUT_REDIRECT_URL = 'home'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+# Configure Django App for Heroku.
+import django_heroku
+
+# Other settings above
+django_heroku.settings(locals())
