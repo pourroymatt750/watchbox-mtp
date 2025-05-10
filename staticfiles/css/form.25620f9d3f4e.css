@@ -1,0 +1,171 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+table {
+  padding: 0 40px;
+  width: 100%;
+  border-spacing: 0 20px;
+}
+
+th {
+  text-align: left;
+  padding: 6px 20px 0 0;
+  font-weight: normal;
+  vertical-align: top;
+  font-size: var(--font-reg);
+}
+
+td {
+  max-width: 60%;
+}
+
+td > * {
+  width: 100%;
+  padding: 2px 4px;
+  font-size: var(--font-l);
+}
+
+td > textarea {
+  height: calc(4 * var(--font-l) + 8px);
+  font-family: inherit;
+}
+
+.btn {
+  align-self: flex-end;
+  margin-right: 40px;
+}
+
+@media only screen and (min-width: 320px) {
+  #cancel {
+    margin-left: 7%;
+  }
+}
+
+@media only screen and (min-width: 340px) {
+  #cancel {
+    margin-left: 12%;
+  }
+}
+
+@media only screen and (min-width: 360px) {
+  #cancel {
+    margin-left: 17%;
+  }
+}
+
+@media only screen and (min-width: 390px) {
+  #cancel {
+    margin-left: 22%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  #cancel {
+    margin-left: 26%;
+  }
+}
+
+@media only screen and (min-width: 430px) {
+  #cancel {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  #cancel {
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (min-width: 490px) {
+  #cancel {
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  #cancel {
+    margin-left: 43%;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  #cancel {
+    margin-left: 46%;
+  }
+}
+
+@media only screen and (min-width: 570px) {
+  #cancel {
+    margin-left: 48%;
+  }
+}
+
+@media only screen and (min-width: 610px) {
+  #cancel {
+    margin-left: 52%;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  #cancel {
+    margin-left: 56%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #cancel {
+    margin-left: 58%;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  #cancel {
+    margin-left: 61%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #cancel {
+    margin-left: 63%;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  #cancel {
+    margin-left: 66%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #cancel {
+    margin-left: 68%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #cancel {
+    margin-left: 70%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #cancel {
+    margin-left: 72%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #cancel {
+    margin-left: 74%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #cancel {
+    margin-left: 76%;
+  }
+}

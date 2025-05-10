@@ -1,0 +1,22 @@
+.page-header {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 300%;
+  line-height: 195%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 80%;
+  margin-left: 75px;
+  border-radius: 15px;
+}
+

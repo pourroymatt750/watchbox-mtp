@@ -15,8 +15,5 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # Copy the project
 COPY . /code/
 
-# Collect static files
-RUN python manage.py collectstatic --noinput
-
 # Start the Django app with Gunicorn
 CMD gunicorn watchbox_mtp.wsgi:application --bind 0.0.0.0:8000
