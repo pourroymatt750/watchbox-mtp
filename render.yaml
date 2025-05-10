@@ -2,12 +2,11 @@ services:
   - type: web
     name: watchbox-web
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn watchbox-mtp.wsgi:application"
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: gunicorn watchbox-mtp.wsgi:application
     envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: watchbox-mtp.settings
       - key: SECRET_KEY
-        value: your-secret-key-here
       - key: DEBUG
-        value: False
+      - key: DATABASE_URL
+      - key: ALLOWED_HOSTS
+
