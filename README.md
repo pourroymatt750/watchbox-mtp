@@ -14,7 +14,6 @@ Watchbox helps keep detailed records of all your inventory. This will allow you 
 - Python 
 - Django  
 - PostgreSQL
-- Deployed via Render
 
 ## Ice Box:
 - Add a feaure to allow user's to enter their buy/sell price and calculate their profit/loss
