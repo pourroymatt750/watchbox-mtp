@@ -7,6 +7,7 @@ This is a full-stack Django application that helps users keep records of the det
 Watchbox helps keep detailed records of all your inventory. This will allow you to focus on what you do best, which is buying and selling the right watches at the right price, while leaving all the detail keeping up to Watchbox. This app is responsive and works on all size screens. 
 
 ## View Watchbox Planning Steps [Here](https://trello.com/b/0qK9htri/watchbox)
+## View Watchbox Deployment [Here](https://watchbox-mtp.onrender.com)
 
 ## Technologies Used:
 - HTML
@@ -14,6 +15,7 @@ Watchbox helps keep detailed records of all your inventory. This will allow you 
 - Python 
 - Django  
 - PostgreSQL
+- Deployed with Render
 
 ## Ice Box:
 - Add a feaure to allow user's to enter their buy/sell price and calculate their profit/loss
