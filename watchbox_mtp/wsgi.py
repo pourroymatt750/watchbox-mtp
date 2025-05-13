@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
 """
 
 import os
+import threading 
 
 from django.core.wsgi import get_wsgi_application
 
@@ -17,7 +18,6 @@ application = get_wsgi_application()
 
 # Delay migrations until registry is ready
 def run_migrations():
-    import threading
     from django.core.management import call_command
     try:
         call_command('migrate', interactive=False)
